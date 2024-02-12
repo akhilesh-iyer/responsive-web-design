@@ -1,0 +1,74 @@
+body{
+    font-family:arial;
+    font-size:18;
+}
+#title{
+    text-align:center;
+    background-color:rgb(127,255,0);
+    padding:10;
+    margin:-7 -7;
+    font-family:calibri;
+    font-size:45;
+    width:100%;
+}
+#description{
+    text-align:justify;
+    width:70vw;
+    padding:0 7vw;
+}
+input{
+    font-size:18;
+    width:300;
+    height:40;
+}
+label{
+    font-size:18;
+}
+p{
+    margin-bottom:5;
+    padding:0 30;
+}
+#dropdown{
+    font-size:18;
+    width:300;
+    height:40;
+}
+.gender{
+    display:inline-block;
+    vertical-align:-7;
+    height:25;
+    width:25;
+}
+.course{
+    width:25;
+    height:25;
+    vertical-align:-7;
+}
+.question{
+    font-size:24;  font-family:calibri;
+    padding-left:0;
+}
+#textarea{
+    width:70vw;
+    height:100;
+    font-size:18;
+    color:grey;
+}
+form{
+    width:70vw;
+    padding-left:7vw;
+    padding-right:7vw;
+    padding-bottom:7vw;
+}
+#submit{
+    width:100px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    text-align:flex-end;
+}
+.parent{
+    width:70vw;
+    position:relative;
+    height:150px;
+}
