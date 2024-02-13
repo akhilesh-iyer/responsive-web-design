@@ -1,0 +1,30 @@
+#image{
+    display:block;
+    max-width:100%;
+    margin:auto;
+    height:auto;
+}
+#img-caption{
+    text-align:center;
+    padding-top:5px;
+}
+body{
+    font-family: consolas;
+    background-color:black;
+    color:white;
+    margin: 5vh 8vw;
+}
+#title{
+    font-family:courier;
+    color:limegreen;
+}
+.heading{
+    color:fuchsia;
+}
+#tribute-link{
+    text-decoration:none;
+    color:blue;
+}
+#quote{
+    color:yellow;
+}
