@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="parent">
+        <main id="main-doc">
+            <nav id="navbar">
+                <header>
+                    <h1>Python</h1>
+                </header>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+                <a class="nav-link" href="#Design_Philosophy">Design Philosophy</a>
+                <a class="nav-link" href="#Syntax_and_Semantics">Syntax and Semantics</a>
+                <a class="nav-link" href="#Program_Examples">Program Examples</a>
+                <a class="nav-link" href="#Frameworks_and_Libraries">Frameworks and Libraries</a>
+            </nav>
+            <div class="content">
+                <section class="main-section" id="Introduction">
+                    <header>
+                        <hr>
+                        <h2>Introduction</h2>
+                        <hr>
+                    </header>
+                    <p>Python is a high-level general-purpose programming language. Its design philosophy emphasizes
+                        code readability with the use of significant indentation.</p>
+                    <p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms,
+                        including structured (particularly procedural), object-oriented and functional programming. It
+                        is often described as a "batteries included" language due to its comprehensive standard library.
+                    </p>
+                    <p>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming
+                        language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python
+                        3.0, released in 2008, was a major revision not completely backward-compatible with earlier
+                        versions. Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+                </section>
+                <section class="main-section" id="Design_Philosophy">
+                    <header>
+                        <hr>
+                        <h2>Design Philosophy</h2>
+                        <hr>
+                    </header>
+                    <p>Python is a multi-paradigm programming language. Object-oriented programming and structured
+                        programming are fully supported, and many of their features support functional programming and
+                        aspect-oriented programming (including metaprogramming and metaobjects). Many other paradigms
+                        are supported via extensions, including design by contract and logic programming.</p>
+                    <p>Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage
+                        collector for memory management. It uses dynamic name resolution (late binding), which binds
+                        method and variable names during program execution.</p>
+                    <p>Its core philosophy is summarized in the Zen of Python (PEP 20), which includes aphorisms such
+                        as:</p>
+                    <ul>
+                        <li>Beautiful is better than ugly.</li>
+                        <li>Explicit is better than implicit.</li>
+                        <li>Simple is better than complex.</li>
+                        <li>Complex is better than complicated.</li>
+                        <li>Readability counts.</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Syntax_and_Semantics">
+                    <header>
+                        <hr>
+                        <h2>Syntax and Semantics</h2>
+                        <hr>
+                    </header>
+                    <p>Python is meant to be an easily readable language. Its formatting is visually uncluttered and
+                        often uses English keywords where other languages use punctuation. Unlike many other languages,
+                        it does not use curly brackets to delimit blocks, and semicolons after statements are allowed
+                        but rarely used. It has fewer syntactic exceptions and special cases than C or Pascal.</p>
+                    <h3>Indentation</h3>
+                    <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An
+                        increase in indentation comes after certain statements; a decrease in indentation signifies the
+                        end of the current block. Thus, the program's visual structure accurately represents its
+                        semantic structure. This feature is sometimes termed the off-side rule. Some other languages use
+                        indentation this way; but in most, indentation has no semantic meaning. The recommended indent
+                        size is four spaces.</p>
+                    <h3>Data types and Operators</h3>
+                    <p><b>Data types: </b>Data types in Python include Integers, Float, Strings, List, Tuple,
+                        Dictionary, Set, Boolean. A programmer does not need to explicitly mention the type of variable
+                        they are creating.</p>
+                    <code>num = 15 # integer number<br>
+      val = 17.8746 # floating point number<br>
+      tag = "Hello123" # string of characters<br>
+      boo = False # boolean variable<br><br>
+      # list of data which are mutable<br>
+      arr = [4,'Snake',True]<br><br>
+      # tuple of data which are immutable<br>
+      mat = (1,'Orange',3.1452)<br><br>
+      # dictionary of values having unique key<br>
+      dic = {'A':True,'B':17, 'C':'Juice'}<br><br>
+      # set of unique data<br>
+      vec = {7,4.269,'Yes'}</code>
+                    <p><b>Operators: </b>Used to operate on the variable. They include arithematic and logical
+                        operators.</p>
+                    <code>5.32 + 15 = 20.32 # addition<br>
+      "Py" + "thon" = "Python" # concatenation<br>
+      6.72 - 2 = 4.72 # subtraction<br>
+      5 * 9 = 45 # multiplication<br>
+      4 ** 2 = 16 # power<br>
+      8 / 2 = 4.0 # division<br>
+      8 // 3 = 2 # integer division<br>
+      10 % 3 = 1 # modulo operator<br>
+      a >= b # a is greater than equal to b<br>
+      a <= b # a is less than equal to b<br>
+      a == b # a is equal to b<br>
+      a != b # a is not equal to b<br>
+      a and b # logical AND<br>
+      a or b # logical OR<br>
+      not a # logical not</code>
+                    <h3>Control Statements</h3>
+                    <p><b>Conditional Statements: </b>An if, elif and else statements are used to control the flow of
+                        program execution through various logical condition and it will onnly execute the content of the
+                        if or elif block if their respective condition is True. A else block does not take any logical
+                        condition and will through syntax error if provided. It is used so that if all the above cases
+                        fail then it will provide a default value.</p>
+                    <code>if condition1 == True:<br>
+      ‎ ‎ # execute this if block<br>
+      elif condition2 == True:<br>
+      ‎ ‎ # execute this elif block instead<br>
+      else:<br>
+      ‎ ‎ # execute this else block if condition1<br>
+      ‎ ‎ # and condition2 fails</code>
+                    <p>If the condition is same and only the right part of the condition is varying then we can
+                        implement match-case concept which was recently introduced in Python 3.10</p>
+                    <code>match condition:<br>
+      ‎ ‎ case val1:<br>
+      ‎ ‎ ‎ ‎ # execute this block<br>
+      ‎ ‎ case val2:<br>
+      ‎ ‎ ‎ ‎ # execute this block<br>
+      ‎ ‎ default:<br>
+      ‎ ‎ ‎ ‎ #acts like else block</code>
+                    <p><b>Looping: </b>If we have to execute a set of instructions repeatedly for certain number of
+                        times we can for loops as well as while loop. A for loop in python takes the parameter in range
+                        function which describes number of times the content of for loop will be executed. It takes
+                        start value, stop value and increment value. The default start value and increment value is 0
+                        and 1 respectively. It should be noted that the stop value is not included since looping starts
+                        from 0.</p>
+                    <code>for i in range(s,e,i):<br>
+      ‎ ‎ # where s = start_value<br>
+      ‎ ‎ # e = end_value<br>
+      ‎ ‎ # i = increment_value<br>
+      ‎ ‎ # this loop will run e-s/i times</code>
+                    <p>Another type of loop is while loop. It keeps on executing the contents of while loop until the
+                        given conditions fails. This type of loop is suitable if we do not know the number of times a
+                        specific block must be looped over. It is important to change the given condition to the while
+                        loop to avoid looping infinitely.</p>
+                    <code>while(condtion == True):<br>
+      ‎ ‎ # execute this block<br>
+      ‎ ‎ # change the condition</code>
+                    <p>A break statement can be used to exit from a loop whereas a continue statement is used to skip
+                        the current iteration and jump to next iteration without executing further code in the current
+                        iteration.</p>
+                </section>
+                <section class="main-section" id="Program_Examples">
+                    <header>
+                        <hr>
+                        <h2>Program Examples</h2>
+                        <hr>
+                    </header>
+                    <p>Hello World program in Python:</p>
+                    <code>print("Hello, World!")</code>
+                    <p>Sum of integers from 1 to n in Python:</p>
+                    <code>n = int(input("Enter a number: "))<br>
+      total = 0<br>
+      for i in range(0,n,1):<br>
+      ‎ ‎ total += i<br>
+      print(total)</code>
+                    <p>Factorial of a number in Python:</p>
+                    <code>n = int(input("Enter a number: "))<br>
+      factorial = 1<br>
+      for i in range(n,0,-1):<br>
+      ‎ ‎ factorial *= i<br>
+      print(factorial)</code>
+                    <p>Even or Odd number in Python:</p>
+                    <code>n = int(input("Enter a number: "))<br>
+      if n%2 == 0:<br>
+      ‎ ‎ print("Number is even!")<br>
+      else:<br>
+      ‎ ‎ print("Number is odd!")</code>
+                    <p>Bubble sort using python:
+                    <p>
+                        <code>arr = [9,8,7,6,5,4,3,2,1]<br>
+      for i in range(n-1):<br>
+      ‎ ‎ for j in range(n-1-i):<br>
+      ‎ ‎ ‎ ‎ if arr[j] > arr[j+1]:<br>
+      ‎ ‎ ‎ ‎ ‎ ‎ temp = arr[j]<br>
+      ‎ ‎ ‎ ‎ ‎ ‎ arr[j] = arr[j+1]<br>
+      ‎ ‎ ‎ ‎ ‎ ‎ arr[j+1] = temp<br>
+      print("Sorted array: ", arr)</code>
+                </section>
+                <section class="main-section" id="Frameworks_and_Libraries">
+                    <header>
+                        <hr>
+                        <h2>Frameworks and Libraries</h2>
+                        <hr>
+                    </header>
+                    <p>Python's large standard library provides tools suited to many tasks and is commonly cited as one
+                        of its greatest strengths. For Internet-facing applications, many standard formats and protocols
+                        such as MIME and HTTP are supported. It includes modules for creating graphical user interfaces,
+                        connecting to relational databases, generating pseudorandom numbers, arithmetic with
+                        arbitrary-precision decimals, manipulating regular expressions, and unit testing.</p>
+                    <p>A Python framework is a collection of Python modules that provides a set of common functionality
+                        that can be used as a structure for building applications of any type.</p>
+                    <p>Frameworks are designed to simplify the development process by providing a general guideline on
+                        how we should build software and abstracting away some of the more complex or repetitive tasks.
+                        This allows you to focus on writing unique and custom logic for your applications, rather than
+                        having to reinvent the wheel.</p>
+                    <p>Popular frameworks and libraries include:</p>
+                    <ol>
+                        <li>
+                            <p>For data science and machine learning purposes:</p>
+                            <ul>
+                                <li>Tensorflow</li>
+                                <li>Numpy</li>
+                                <li>Pandas</li>
+                                <li>Pytorch</li>
+                                <li>Scikit-learn</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>For development of web applications and graphical user interfaces:</p>
+                            <ul>
+                                <li>Django</li>
+                                <li>Flask</li>
+                                <li>Tkinter</li>
+                                <li>Requests</li>
+                                <li>Sockets</li>
+                                <li>PyQt</li>
+                            </ul>
+                        </li>
+                </section>
+            </div>
+    </div>
+    </main>
+</body>
+
+</html>
