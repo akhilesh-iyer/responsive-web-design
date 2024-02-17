@@ -1,0 +1,126 @@
+body{
+    overflow-x: scroll;
+}
+#header{
+    background-color:white;
+    position:sticky;
+    padding-top:10px;
+    top:0;
+}
+#header-img{
+    height:50px;
+    margin:0px auto;
+    display:block;
+}
+.nav-link{
+    text-decoration:none;
+    padding-left:15px;
+    padding-right:15px;
+    color:blue;
+    font-size:large;
+}
+#nav-bar{
+    padding:10px 0px;
+    text-align:center;
+    border-bottom:3px solid red;
+}
+p{
+    font-size:18;
+    text-align:justify;
+    margin:20px 3vw
+}
+.outer{
+    display:flex;
+    margin:0px 8vw; 
+    align-items:center;
+}
+.description{
+    display:flex;
+    align-items:center;
+    margin:20px 20px;
+    font-size:18;
+}
+#video{
+    display:block;
+    margin:10px auto;
+    width:80vw;
+    height:50vw;
+}
+::placeholder{
+    color:blue;
+    font-size:18;
+    background-color:white;
+    text-align:center;
+}
+#email{
+    border:2px solid blue;
+    background-color:white;
+    color:blue;
+    width:250px;
+    height:30px;
+    font-size:18;
+    display:block;
+    margin:0 auto;
+}
+#submit{
+    background-color:white;
+    color:red;
+    border:2px solid red;
+    height:30px;
+    width:80px;
+    font-size:18;
+    border-radius: 10px;
+    display:block;
+    margin:0px auto;
+}
+  @media (min-width:800px){
+  #header{
+    display:flex;
+    padding-bottom:7px;
+    border-bottom:3px solid red;
+  }
+  #header-img{
+    height:50px;
+    margin:0px 2vw;
+    display:flex;
+  }
+  .nav-link{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    padding-left:3vw;
+    padding-right:3vw;
+    color:blue;
+    font-size:large;
+  }
+  #nav-bar{
+    display:flex;
+    padding:10px 0px;
+    text-align:center;
+    border:none;
+    position:absolute;
+    right:4vw;
+  }
+  p{
+    font-size:20;
+    text-align:justify;
+    margin:20px 3vw
+  }
+  .outer{
+    display:flex;
+    margin:0px 8vw; 
+    align-items:center;
+  }
+  .description{
+    display:flex;
+    align-items:center;
+    margin:20px 20px;
+    font-size:20;
+  }
+  #video{
+    display:block;
+    margin:10px auto;
+    width:40vw;
+    height:25vw;
+  }
+}
