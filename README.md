@@ -1,0 +1,1 @@
+Responsive Web Design is a certificate course provided by freeCodeCamp aimed at beginner to learn basics of HTML and CSS by doing projects. I have successfully completed the course which consisted of doing mandatory projects whose source code is provided in this repository.
